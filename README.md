@@ -31,14 +31,14 @@ Endpoint for order submission: https://672ccc84fd89797156403d7e.mockapi.io/order
 
 ---
 ## Components
-- app-root - The main root component that loads the application.
-- RestaurantComponent - Displays a list of restaurants with a grid layout and allows toggling items in the wishlist.
-- MenuComponent - Shows menu items for a selected restaurant.
-- CartComponent -Displays items added to the cart, quantity controls, and the total cost. Contains a checkout button to submit the order to the API.
+- **app-root** - The main root component that loads the application.
+- **RestaurantComponent** - Displays a list of restaurants with a grid layout and allows toggling items in the wishlist.
+- **MenuComponent** - Shows menu items for a selected restaurant.
+- **CartComponent** -Displays items added to the cart, quantity controls, and the total cost. Contains a checkout button to submit the order to the API.
 
 ## Services
 
-**CartServiceService -
+**CartServiceService** -
 Manages cart state, including items, quantities, and total count. It also handles checkout by sending data to the mock API and clearing the cart after a successful order.
 
 ## Development server
@@ -47,17 +47,34 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Usage
 
-**Restaurant Browsing -
+- **Restaurant Browsing** -
 Restaurants are displayed in a grid layout.
 Users can click on a restaurant to view its menu.
 The toggleWishlist feature allows adding/removing restaurants from the wishlist.
-**Adding Items to Cart -
+- **Adding Items to Cart** -
 Users can add menu items to the cart with a single click.
 Quantities can be adjusted in the cart view.
 Real-time price calculation reflects total cost instantly as items are updated.
-**Checkout -
+- **Checkout** -
 Clicking the Checkout button submits the order to a mock API endpoint.
 Cart is cleared after successful submission.
+
+## Wishlist Feature
+Restaurants can be added to a wishlist by clicking the wishlist icon. The toggleWishlist method manages the addition and removal of items from the wishlist.
+**Wishlist Logic (In RestaurantComponent)** 
+The toggleWishlist function adds a restaurant to the wishlist or removes it if already added. This is controlled by toggling the isFavorite boolean.
+
+## Cart and Checkout
+**Cart Logic (In CartServiceService)** - 
+The CartServiceService is responsible for:
+- Adding items to the cart.
+- Updating quantities of items.
+- Calculating and broadcasting cart count and total.
+**Real-Time Price Update** -
+In CartComponent, the cartItems$ observable tracks items in the cart, and the total is recalculated whenever the cart contents are updated.
+
+**Checkout**
+The checkout function in CartComponent sends the order details (name, quantity, and price) to Mock API and clears the cart upon completion.
 
 ## Code scaffolding
 
