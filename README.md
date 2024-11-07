@@ -38,7 +38,7 @@ Endpoint for order submission: https://672ccc84fd89797156403d7e.mockapi.io/order
 
 ## Services
 
-# CartServiceService
+CartServiceService -
 Manages cart state, including items, quantities, and total count. It also handles checkout by sending data to the mock API and clearing the cart after a successful order.
 
 ## Development server
