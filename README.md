@@ -12,7 +12,6 @@ SwiggyClone is a food delivery web application built using Angular. The applicat
 - [Wishlist Feature](#wishlist-feature)
 - [Cart and Checkout](#cart-and-checkout)
 - [API Integration](#api-integration)
-- [Contributing](#contributing)
 
 ---
 
@@ -29,9 +28,15 @@ Endpoint for order submission: https://672ccc84fd89797156403d7e.mockapi.io/order
 - **Cart Management:** Add items to the cart, adjust quantities, view total cost.
 - **Wishlist:** Add restaurants to the wishlist for easy access.
 - **Real-Time Price Calculation:** Cart totals are automatically updated as items are added or removed.
-- **Checkout:** Send order details to a mock API endpoint and clear the cart upon completion.
+- **Checkout:** Clear the cart upon completion.
 
 ---
+## Components
+# app-root - The main root component that loads the application.
+# RestaurantComponent - Displays a list of restaurants with a grid layout and allows toggling items in the wishlist.
+# MenuComponent - Shows menu items for a selected restaurant.
+# CartComponent -Displays items added to the cart, quantity controls, and the total cost. Contains a checkout button to submit the order to the API.
+
 
 ## Development server
 
