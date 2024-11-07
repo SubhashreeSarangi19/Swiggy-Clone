@@ -32,10 +32,10 @@ Endpoint for order submission: https://672ccc84fd89797156403d7e.mockapi.io/order
 
 ---
 ## Components
-- **app-root - The main root component that loads the application.
-- **RestaurantComponent - Displays a list of restaurants with a grid layout and allows toggling items in the wishlist.
-- **MenuComponent - Shows menu items for a selected restaurant.
-- **CartComponent -Displays items added to the cart, quantity controls, and the total cost. Contains a checkout button to submit the order to the API.
+- #app-root - The main root component that loads the application.
+- #RestaurantComponent - Displays a list of restaurants with a grid layout and allows toggling items in the wishlist.
+- #MenuComponent - Shows menu items for a selected restaurant.
+- #CartComponent -Displays items added to the cart, quantity controls, and the total cost. Contains a checkout button to submit the order to the API.
 
 
 ## Development server
