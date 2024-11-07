@@ -38,7 +38,7 @@ Endpoint for order submission: https://672ccc84fd89797156403d7e.mockapi.io/order
 
 ## Services
 
-CartServiceService -
+**CartServiceService -
 Manages cart state, including items, quantities, and total count. It also handles checkout by sending data to the mock API and clearing the cart after a successful order.
 
 ## Development server
@@ -47,15 +47,15 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Usage
 
-# Restaurant Browsing -
+**Restaurant Browsing -
 Restaurants are displayed in a grid layout.
 Users can click on a restaurant to view its menu.
 The toggleWishlist feature allows adding/removing restaurants from the wishlist.
-# Adding Items to Cart -
+**Adding Items to Cart -
 Users can add menu items to the cart with a single click.
 Quantities can be adjusted in the cart view.
 Real-time price calculation reflects total cost instantly as items are updated.
-# Checkout -
+**Checkout -
 Clicking the Checkout button submits the order to a mock API endpoint.
 Cart is cleared after successful submission.
 
