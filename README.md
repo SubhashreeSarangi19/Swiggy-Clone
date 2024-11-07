@@ -10,6 +10,7 @@ SwiggyClone is a food delivery web application built using Angular. The applicat
 - [Services](#services)
 - [Wishlist Feature](#wishlist-feature)
 - [Cart and Checkout](#cart-and-checkout)
+- [Development Server](#development-server)
 - [Contributing](#contributing)
 
 ---
