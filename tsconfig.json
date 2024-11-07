@@ -18,6 +18,8 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
     "lib": [
       "ES2022",
       "dom"
